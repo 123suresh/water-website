@@ -24,7 +24,7 @@ export function Home() {
   return (
     <>
       {/* Hero Section with Background Image */}
-      <div className="relative flex h-[80vh] content-center items-center justify-center pt-16 pb-32">
+      <div className="relative flex h-[80vh] content-center items-center justify-center pt-16 pb-32 pt-30">
         {/* Background Image */}
         <img
           src="https://iesmariagaliana.es/wp-content/uploads/2017/01/Fondo_agua_800.png"
@@ -36,7 +36,7 @@ export function Home() {
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
 
         {/* Content */}
-        <div className="max-w-8xl container relative mx-auto z-20">
+        <div className="max-w-8xl container relative mx-auto z-20" style={{paddingTop:"30px"}}>
           <Grid container spacing={4} alignItems="center" justifyContent="center">
             {/* Image on the Left */}
             <Grid item md={6} xs={12} className="flex justify-center">
