@@ -33,10 +33,10 @@ function Contact() {
                 </div>
             </Box>
 
-            <Box>
-                <Grid container spacing={3} alignItems="center" justifyContent="space-evenly">
+            <Box sx={{paddingBottom:"100px"}}>
+                <Grid container spacing={3} alignItems="center" justifyContent="space-evenly" textAlign="center">
                     <Grid item>
-                        <Typography className="text-2xl font-normal">
+                        <Typography className="text-3xl font-normal py-3">
                            Send us an email
                         </Typography>
                         <Typography className="text-2xl font-normal">
@@ -44,7 +44,7 @@ function Contact() {
                         </Typography>
                     </Grid>
                     <Grid item>
-                        <Typography className="text-2xl font-normal">
+                        <Typography className="text-3xl font-normal py-3">
                            Call Us
                         </Typography>
                         <Typography className="text-2xl font-normal">
