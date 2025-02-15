@@ -5,12 +5,11 @@ import {
   Navbar as MTNavbar,
   MobileNav,
   Typography,
-  Button,
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-export function Navbar({ brandName, routes, action }) {
+export function Navbar({ brandName, routes }) {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -72,26 +71,19 @@ export function Navbar({ brandName, routes, action }) {
   return (
     <MTNavbar color="transparent" className="p-2 w-full max-w-full z-50">
       <div className="flex items-center justify-between w-full" style={{ color: "black" }}>
+        {/* Logo on the Left */}
         <Link to="/">
           <Typography>
             <img src="/img/everest_logo1.png" width="80px" height="auto" alt="Everest Logo" />
           </Typography>
         </Link>
-        <div className="hidden lg:block">{navList}</div>
-        <div className="hidden gap-2 lg:flex">
-          <a
-            href="https://www.material-tailwind.com/blocks?ref=mtkr"
-            target="_blank"
-          >
-            {/* <Button variant="text" size="sm" color="white" fullWidth>
-              Sign Up
-            </Button> */}
-          </a>
-          {React.cloneElement(action, {
-            className: "hidden lg:inline-block",
-          })}
+
+        {/* Centered Navigation Links */}
+        <div className="hidden lg:flex flex-grow justify-center">
+          {navList}
         </div>
 
+        {/* Mobile Menu Toggle Button */}
         <IconButton
           variant="text"
           size="sm"
@@ -106,24 +98,14 @@ export function Navbar({ brandName, routes, action }) {
           )}
         </IconButton>
       </div>
+
+      {/* Mobile Navigation Menu */}
       <MobileNav
         className="rounded-xl bg-white px-4 text-blue-gray-900"
         open={openNav}
       >
         <div className="container mx-auto">
           {navList}
-          <a
-            href="https://www.material-tailwind.com/blocks/react?ref=mtkr"
-            target="_blank"
-            className="mb-2 block"
-          >
-            <Button variant="text" size="sm" fullWidth>
-              pro version
-            </Button>
-          </a>
-          {React.cloneElement(action, {
-            className: "w-full block",
-          })}
         </div>
       </MobileNav>
     </MTNavbar>
@@ -132,22 +114,11 @@ export function Navbar({ brandName, routes, action }) {
 
 Navbar.defaultProps = {
   brandName: "Everest Multitech Logo",
-  action: (
-    <a
-      href="https://www.creative-tim.com/product/material-tailwind-kit-react"
-      target="_blank"
-    >
-      <Button variant="gradient" size="sm" fullWidth>
-        Login
-      </Button>
-    </a>
-  ),
 };
 
 Navbar.propTypes = {
   brandName: PropTypes.string,
   routes: PropTypes.arrayOf(PropTypes.object).isRequired,
-  action: PropTypes.node,
 };
 
 Navbar.displayName = "/src/widgets/layout/navbar.jsx";

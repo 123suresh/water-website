@@ -23,22 +23,16 @@ import {servicesData} from "../everestdata/servicesData"
 export function Home() {
   return (
     <>
-      {/* Hero Section with Background Image */}
       <div className="relative flex h-[80vh] content-center items-center justify-center pt-16 pb-32 pt-30">
-        {/* Background Image */}
         <img
           src="https://www.pngarts.com/files/3/Everest-PNG-High-Quality-Image.png"
           alt="Background"
           className="absolute top-0 left-0 w-full h-full object-cover z-0"
         />
 
-        {/* Dark Overlay */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
-
-        {/* Content */}
         <div className="max-w-8xl container relative mx-auto z-20" style={{paddingTop:"30px"}}>
           <Grid container spacing={4} alignItems="center" justifyContent="center">
-            {/* Image on the Left */}
             <Grid item md={6} xs={12} className="hidden sm:flex justify-center">
               <img
                 src="https://www.pngmart.com/files/16/Plastic-Water-Bottle-PNG-Clipart.png"
@@ -48,7 +42,6 @@ export function Home() {
               />
             </Grid>
 
-            {/* Text on the Right */}
             <Grid item md={6} xs={12} className="text-center lg:text-left">
               <Typography
                 variant="h4"
@@ -73,7 +66,9 @@ export function Home() {
                 Perfectly Balanced
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80 text-lg md:text-xl">
-                Everest Multi Tech is the answer to all your technology issues. From cracked screens to broken charging ports, a malfunctioning game console to broken printers, we will service it all and get you back up and running!
+                Pure, refreshing, and enriched with essential minerals, Himali Water is the perfect 
+                choice for healthy hydration. Sourced from nature and carefully purified, it delivers 
+                crisp taste and nourishment in every sip!
               </Typography>
             </Grid>
           </Grid>
@@ -87,34 +82,28 @@ export function Home() {
 
               <Typography
                 variant="h1"
-                // color="white"
                 className="mb-6 font-black text-5xl md:text-6xl lg:text-7xl"
               >
                 Himali Water
               </Typography>
               <Typography
                 variant="h4"
-                // color="white"
                 className="mb-6 font-bold text-2xl md:text-3xl lg:text-4xl"
               >
                 Expertly purified & <br/>
                 Mineral Rich
               </Typography>
               <Typography variant="lead"  className="opacity-80 text-lg md:text-xl">
-                Everest Multi Tech is the answer to all your technology issues. From cracked screens to broken charging ports, a malfunctioning game console to broken printers, we will service it all and get you back up and running!
+                Himali Water – Expertly purified & mineral-rich, delivering crisp, refreshing 
+                hydration for a healthier you. Sourced from nature and carefully balanced, 
+                it provides essential minerals to keep you revitalized every day!
               </Typography>
-
-
             </Grid>
-
-
             <Grid item md={6} sm={12} className="flex justify-center">
                 <img src="https://pngimg.com/uploads/water_bottle/water_bottle_PNG98954.png"
                 width="70%"
                 />
             </Grid>
-
-
         </Grid>
       </Box>
 
