@@ -27,7 +27,7 @@ export function Home() {
       <div className="relative flex h-[80vh] content-center items-center justify-center pt-16 pb-32 pt-30">
         {/* Background Image */}
         <img
-          src="https://iesmariagaliana.es/wp-content/uploads/2017/01/Fondo_agua_800.png"
+          src="https://www.pngarts.com/files/3/Everest-PNG-High-Quality-Image.png"
           alt="Background"
           className="absolute top-0 left-0 w-full h-full object-cover z-0"
         />
@@ -54,21 +54,22 @@ export function Home() {
                 color="white"
                 className="mb-6 font-bold text-2xl md:text-3xl lg:text-4xl"
               >
-                Welcome to
+               New Look
               </Typography>
               <Typography
                 variant="h1"
                 color="white"
                 className="mb-6 font-black text-5xl md:text-6xl lg:text-7xl"
               >
-                EVEREST MULTI TECH
+                Himali Water
               </Typography>
               <Typography
                 variant="h4"
                 color="white"
                 className="mb-6 font-bold text-2xl md:text-3xl lg:text-4xl"
               >
-                Repair and Printing
+                Naturally Filtered <br/>
+                Perfectly Balanced
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80 text-lg md:text-xl">
                 Everest Multi Tech is the answer to all your technology issues. From cracked screens to broken charging ports, a malfunctioning game console to broken printers, we will service it all and get you back up and running!
@@ -78,28 +79,38 @@ export function Home() {
         </div>
       </div>
 
-      {/* Services Section */}
-      <section className="px-2.5 pt-20 pb-48 bg-gray-50">
-        <div className="container mx-auto">
-          <PageTitle section="Our Services" heading="Here are our Services">
-            At Everest Multi Tech Co LLC, we are your one-stop shop for a wide range of services 
-            designed to meet your personal and business needs. Whether you need custom printing, 
-            phone repairs, IT support, or remittance services, we’ve got you covered. Explore our 
-            full list of offerings below, and trust us to deliver the highest quality service 
-            every time.
-          </PageTitle>
-          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
-            {servicesData.map(({ img, name, position, socials }) => (
-              <TeamCard
-                key={name}
-                img={img}
-                name={name}
-                position={position}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+      <section className="px-10 py-20 bg-gray-50">
+      <Grid container spacing={6} alignItems="center">
+        <Grid item md={6} xs={12} className="flex justify-center">
+          <img
+            src="/img/everest_logo1.png"
+            alt="Everest Logo"
+            className="w-full max-w-md rounded-lg shadow-lg"
+          />
+        </Grid>
+
+        <Grid item md={6} xs={12}>
+          <Grid container spacing={4} direction="column">
+            <Grid item>
+              <Typography style={{fontSize:"24px", fontWeight:"700", color:"#747686"}}>
+                Himali was established in 1995 and has gone on to gain popularity as the number one 
+                bottled water brand in Nepal. The brand is the most preferred choice of Nepali, 
+                because it delivers quality that is rich in natural nutrients essential for healthy 
+                growth.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography style={{fontSize:"24px", fontWeight:"700", color:"#747686"}}>
+                Himali Natural Mineral Water offers quality in different pack sizes (500ml, 750ml, 1.5L, and 19.5L) 
+                to meet the day-to-day preference and convenience of consumers. It is ISO and HCCAP certified 
+                and is bottled at source from a natural aquifer 60 meters underground.
+              </Typography>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+    </section>
+
     </>
   );
 }
