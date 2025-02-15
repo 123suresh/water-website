@@ -39,14 +39,13 @@ export function Home() {
         <div className="max-w-8xl container relative mx-auto z-20" style={{paddingTop:"30px"}}>
           <Grid container spacing={4} alignItems="center" justifyContent="center">
             {/* Image on the Left */}
-            <Grid item md={6} xs={12} className="flex justify-center">
+            <Grid item md={6} xs={12} className="flex justify-center" sx='display:"none"'>
               <img
                 // src="http://clipart-library.com/images_k/water-png-transparent/water-png-transparent-21.png"
                 src="https://www.pngmart.com/files/16/Plastic-Water-Bottle-PNG-Clipart.png"
                 alt="Water"
                 className="w-full max-w-md rounded-lg shadow-lg"
-                          width="200px"
-          height="20px"
+                width="70%"
               />
             </Grid>
 
@@ -110,7 +109,7 @@ export function Home() {
             </Grid>
 
 
-            <Grid item md={6} sm={12}>
+            <Grid item md={6} sm={12} className="flex justify-center">
                 <img src="https://pngimg.com/uploads/water_bottle/water_bottle_PNG98954.png"
                 width="70%"
                 />

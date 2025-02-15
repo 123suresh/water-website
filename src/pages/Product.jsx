@@ -17,7 +17,7 @@ export function Product() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          backgroundImage: 'url("http://2.bp.blogspot.com/-jWhPrOCp9Go/T32MgnfjjzI/AAAAAAAABy0/8TeGZipp_J4/s1600/Water+Splash+Wallpapers+4.jpg")',
+          backgroundImage: 'url("http://pngimg.com/uploads/water/water_PNG50229.png")',
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -64,20 +64,12 @@ export function Product() {
       <Box py="60px">
         <Grid container sapcing={4} alignItems="center">
             <Grid item md={6} sm={12}>
-                <img src="https://pngimg.com/uploads/water_bottle/water_bottle_PNG98954.png"
+                <img src="https://www.pinclipart.com/picdir/big/460-4608436_long-term-use-of-ionized-alkaline-water-is.png"
                 width="70%"
                 />
             </Grid>
             <Grid item md={6} sm={12}>
 
-
-            <Typography
-                variant="h4"
-                // color="white"
-                className="mb-6 font-bold text-2xl md:text-3xl lg:text-4xl"
-              >
-               New Look
-              </Typography>
               <Typography
                 variant="h1"
                 // color="white"
@@ -90,11 +82,16 @@ export function Product() {
                 // color="white"
                 className="mb-6 font-bold text-2xl md:text-3xl lg:text-4xl"
               >
-                Naturally Filtered <br/>
-                Perfectly Balanced
+                Premuim Natural Mineral Water
               </Typography>
               <Typography variant="lead"  className="opacity-80 text-lg md:text-xl">
-                Everest Multi Tech is the answer to all your technology issues. From cracked screens to broken charging ports, a malfunctioning game console to broken printers, we will service it all and get you back up and running!
+              Himali Water is a premium purified water brand, carefully enriched with essential 
+              minerals to support a healthy lifestyle. Known for its purity and refreshing taste, 
+              Himali Water is the preferred choice for those who value quality hydration. 
+              Available in various pack sizes to suit everyday needs, it is sourced from pristine 
+              natural reserves and undergoes strict purification processes. Certified for safety 
+              and quality, Himali Water ensures every sip is pure, refreshing, and beneficial for 
+              your well-being.
               </Typography>
 
 
