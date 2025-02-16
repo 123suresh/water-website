@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Typography, IconButton } from "@material-tailwind/react";
+import { Link, NavLink } from "react-router-dom";
 
 const year = new Date().getFullYear();
 
@@ -42,10 +43,10 @@ export function Footer({ title, description, socials, menus, copyright }) {
                 >
                   {name}
                 </Typography>
-                <ul className="mt-3">
+                <ul className="mt-5">
                   {items.map((item) => (
                     <li key={item.name}>
-                      <Typography
+                      {/* <Typography
                         as="a"
                         href={item.path}
                         target="_blank"
@@ -54,7 +55,15 @@ export function Footer({ title, description, socials, menus, copyright }) {
                         className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
                       >
                         {item.name}
-                      </Typography>
+                      </Typography> */}
+                      <Link to={item.path}>
+                        <Typography
+                          variant="small"
+                          className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
+                        >
+                          {item.name}
+                        </Typography>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -108,11 +117,11 @@ Footer.defaultProps = {
     {
       name: "useful links",
       items: [
-        { name: "Home", path: "https://www.creative-tim.com/presentation" },
-        { name: "Product", path: "https://www.creative-tim.com/blog" },
+        { name: "Home", path: "/home" },
+        { name: "Product", path: "/product" },
         {
           name: "Contact",
-          path: "https://www.github.com/creativetimofficial/material-tailwind?ref=mtk",
+          path: "/contact",
         }
       ],
     },

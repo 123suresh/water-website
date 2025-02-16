@@ -10,7 +10,7 @@ import { Box, Grid } from "@mui/material";
 export function Home() {
   return (
     <>
-      <div className="relative flex h-[80vh] content-center items-center justify-center pt-16 pb-32 pt-30" style={{marginTop:"10px"}}>
+      <div className="relative flex h-[80vh] content-center items-center justify-center">
         <img
           src="/img/homepagebg.png"
           alt="Background"

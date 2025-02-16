@@ -40,7 +40,7 @@ function Contact() {
                            Send us an email
                         </Typography>
                         <Typography className="text-2xl font-normal">
-                           himaliwater@gmail.com
+                           info@himaliwater.com
                         </Typography>
                     </Grid>
                     <Grid item>

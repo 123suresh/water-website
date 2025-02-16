@@ -69,7 +69,14 @@ export function Navbar({ brandName, routes }) {
   );
 
   return (
-    <MTNavbar color="transparent" className="p-2 w-full max-w-full z-[1000]">
+    <MTNavbar color="transparent" className="p-2 w-full max-w-full z-[1000]"
+    style={{
+      position:"fixed",
+      left:0,
+      right:0,
+      backgroundColor:"#FEFFFF"
+    }}
+    >
       <div className="flex items-center justify-between w-full" style={{ color: "black" }}>
         {/* Logo on the Left */}
         <Link to="/">
