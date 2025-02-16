@@ -121,8 +121,8 @@ export function Home() {
           <Grid container spacing={4} direction="column">
             <Grid item>
               <Typography style={{fontSize:"24px", fontWeight:"700", color:"#747686"}}>
-                Himali was established in 1995 and has gone on to gain popularity as the number one 
-                bottled water brand in Nepal. The brand is the most preferred choice of Nepali, 
+                Himali was established in 2024 and has gone on to gain popularity as the number one 
+                bottled water brand in USA. The brand is the most preferred choice of USA, 
                 because it delivers quality that is rich in natural nutrients essential for healthy 
                 growth.
               </Typography>
@@ -130,8 +130,7 @@ export function Home() {
             <Grid item>
               <Typography style={{fontSize:"24px", fontWeight:"700", color:"#747686"}}>
                 Himali Natural Mineral Water offers quality in different pack sizes (500ml, 750ml, 1.5L, and 19.5L) 
-                to meet the day-to-day preference and convenience of consumers. It is ISO and HCCAP certified 
-                and is bottled at source from a natural aquifer 60 meters underground.
+                to meet the day-to-day preference and convenience of consumers. It is ISO certified.
               </Typography>
             </Grid>
           </Grid>
