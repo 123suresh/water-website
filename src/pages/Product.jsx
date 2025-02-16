@@ -17,7 +17,7 @@ export function Product() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          backgroundImage: 'url("http://pngimg.com/uploads/water/water_PNG50229.png")',
+          backgroundImage: 'url("/img/productbg.png")',
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -64,7 +64,7 @@ export function Product() {
       <Box py="60px">
         <Grid container sapcing={4} alignItems="center">
             <Grid item md={6} sm={12}>
-                <img src="https://www.pinclipart.com/picdir/big/460-4608436_long-term-use-of-ionized-alkaline-water-is.png"
+                <img src="/img/productimg2.png"
                 width="70%"
                 />
             </Grid>

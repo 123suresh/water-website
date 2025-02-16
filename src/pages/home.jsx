@@ -1,31 +1,18 @@
 import React from "react";
 import {
-  Card,
   Typography,
-  Button,
-  IconButton,
-  Input,
-  Textarea,
 } from "@material-tailwind/react";
-import { PageTitle } from "@/widgets/layout";
-import { FeatureCard, TeamCard } from "@/widgets/cards";
-import { featuresData, contactData } from "@/data";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import { Autoplay, Pagination } from "swiper/modules";
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import {RepairSlidingImg} from '../everestdata/RepairData';
 import { Box, Grid } from "@mui/material";
-import {servicesData} from "../everestdata/servicesData"
 
 export function Home() {
   return (
     <>
       <div className="relative flex h-[80vh] content-center items-center justify-center pt-16 pb-32 pt-30">
         <img
-          src="https://www.pngarts.com/files/3/Everest-PNG-High-Quality-Image.png"
+          src="/img/homepagebg.png"
           alt="Background"
           className="absolute top-0 left-0 w-full h-full object-cover z-0"
         />
@@ -35,7 +22,7 @@ export function Home() {
           <Grid container spacing={4} alignItems="center" justifyContent="center">
             <Grid item md={6} xs={12} className="hidden sm:flex justify-center">
               <img
-                src="https://www.pngmart.com/files/16/Plastic-Water-Bottle-PNG-Clipart.png"
+                src="/img/homepagebottle.png"
                 alt="Water"
                 className="w-full max-w-md rounded-lg shadow-lg"
                 width="70%"
@@ -100,7 +87,7 @@ export function Home() {
               </Typography>
             </Grid>
             <Grid item md={6} sm={12} className="flex justify-center">
-                <img src="https://pngimg.com/uploads/water_bottle/water_bottle_PNG98954.png"
+                <img src="/img/homepagebottle2.png"
                 width="70%"
                 />
             </Grid>
