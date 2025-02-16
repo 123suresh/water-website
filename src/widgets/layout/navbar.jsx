@@ -69,12 +69,12 @@ export function Navbar({ brandName, routes }) {
   );
 
   return (
-    <MTNavbar color="transparent" className="p-2 w-full max-w-full z-50">
+    <MTNavbar color="transparent" className="p-2 w-full max-w-full z-[1000]">
       <div className="flex items-center justify-between w-full" style={{ color: "black" }}>
         {/* Logo on the Left */}
         <Link to="/">
           <Typography>
-            <img src="/img/everest_logo1.png" width="80px" height="auto" alt="Everest Logo" />
+            <img src="/img/Himali-Water.png" width="80px" height="auto" alt="Everest Logo" />
           </Typography>
         </Link>
 

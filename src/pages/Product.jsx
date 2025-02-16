@@ -6,12 +6,12 @@ export function Product() {
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <>
+    <div style={{backgroundColor:"#FEFFFF"}}>
       <Box
         sx={{
           textAlign: "center",
           py: 10,
-          mx: 4,
+          // mx: 4,
           position: "relative",
           minHeight: "60vh",
           display: "flex",
@@ -98,7 +98,7 @@ export function Product() {
             </Grid>
         </Grid>
       </Box>
-    </>
+    </div>
   );
 }
 

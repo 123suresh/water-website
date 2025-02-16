@@ -4,7 +4,7 @@ import { Typography } from "@material-tailwind/react";
 
 function Contact() {
     return (
-        <div className="pl-10 pr-10" style={{backgroundColor:"#f6f5f5", color:"#5f5757"}}>
+        <div className="pl-10 pr-10" style={{backgroundColor:"#FEFFFF", color:"#5f5757"}}>
             <Box
                 sx={{
                     textAlign: "center",
