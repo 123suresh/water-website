@@ -64,12 +64,12 @@ export function Product() {
       <Box py="60px">
         <Grid container sapcing={4} alignItems="center">
             <Grid item md={6} sm={12}>
-                <img src="/img/productimg2.png"
-                width="70%"
+                <img src="/img/himaliwater1.png"
+                width="90%"
                 />
             </Grid>
             <Grid item md={6} sm={12}>
-
+              <Box sx={{margin:"0px 20px 0px 20px"}}>
               <Typography
                 variant="h1"
                 // color="white"
@@ -93,8 +93,7 @@ export function Product() {
               and quality, Himali Water ensures every sip is pure, refreshing, and beneficial for 
               your well-being.
               </Typography>
-
-
+              </Box>
             </Grid>
         </Grid>
       </Box>

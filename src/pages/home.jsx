@@ -13,8 +13,8 @@ export function Home() {
       <div className="relative flex h-[80vh] content-center items-center justify-center">
         <img
           src="/img/homepagebg.png"
-          alt="Background"
           className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          style={{backgroundColor:"#3AAFA9"}}
         />
 
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
@@ -23,40 +23,30 @@ export function Home() {
             <Grid item md={6} xs={12} className="hidden sm:flex justify-center">
               <Box
                 sx={{
-                  // mt: "80px",
                   display: { xs: "none", md: "block" },
                 }}
               >
-                <img src="/img/homepagebottle.png" alt="Water" 
-                width="70%" />
+                    <img src="/img/himaliwater1.png" alt="Water" width="150%" />
               </Box>
-
             </Grid>
 
-            <Grid item md={6} xs={12} className="text-center lg:text-left">
-              <Typography
-                variant="h4"
-                color="white"
-                className="mb-6 font-bold text-2xl md:text-3xl lg:text-4xl"
-              >
-                New Look
-              </Typography>
+            <Grid item md={6} xs={12} className="text-center lg:text-left" sx={{color:"#FEFFFF"}}>
               <Typography
                 variant="h1"
-                color="white"
+                // color="white"
                 className="mb-6 font-black text-5xl md:text-6xl lg:text-7xl"
               >
                 Himali Water
               </Typography>
               <Typography
                 variant="h4"
-                color="white"
+                // color="white"
                 className="mb-6 font-bold text-2xl md:text-3xl lg:text-4xl"
               >
                 Naturally Filtered <br />
                 Perfectly Balanced
               </Typography>
-              <Typography variant="lead" color="white" className="opacity-80 text-lg md:text-xl">
+              <Typography variant="lead" className="opacity-80 text-lg md:text-xl">
                 Pure, refreshing, and enriched with essential minerals, Himali Water is the perfect
                 choice for healthy hydration. Sourced from nature and carefully purified, it delivers
                 crisp taste and nourishment in every sip!
@@ -91,8 +81,8 @@ export function Home() {
             </Typography>
           </Grid>
           <Grid item md={6} sm={12} className="flex justify-center">
-            <img src="/img/homepagebottle2.png"
-              width="70%"
+            <img src="/img/productimg2.png"
+              width="90%"
             />
           </Grid>
         </Grid>

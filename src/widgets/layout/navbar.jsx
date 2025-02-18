@@ -53,7 +53,7 @@ export function Navbar({ brandName, routes }) {
               className="flex items-center gap-1 p-1 font-medium transition-colors duration-200"
               style={({ isActive }) => ({
                 fontSize: "18px",
-                color: isActive ? "#ff6000" : "#4a5568", // yellow for active, gray-700 for inactive
+                color: isActive ? "#3AAFA9" : "#17252A",
               })}
             >
               {icon &&
@@ -110,6 +110,7 @@ export function Navbar({ brandName, routes }) {
       <MobileNav
         className="rounded-xl bg-white px-4 text-blue-gray-900"
         open={openNav}
+        sx={{backgroundColor:"#3AAFA9"}}
       >
         <div className="container mx-auto">
           {navList}
